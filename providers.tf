@@ -19,4 +19,6 @@ terraform {
 
 provider "huaweicloud" {
   region     = "cn-north-4"
+  access_key = "J43N4LH6GEMZGC8ZZZLV"
+  secret_key = "JPq9CAcwioEr9VZbk0wkwE3IKTnU6dqUkbKDpdpQ"
 }
