@@ -34,8 +34,8 @@ jobs:
         HW_SECRET_KEY: ${{ secrets.SECRET_KEY }}
         HW_REGION_NAME: cn-north-4
         HW_ENTERPRISE_PROJECT_ID: "0"
-        AWS_ACCESS_KEY_ID: ${{ env_key.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ env_key.AWS_SECRET_ACCESS_KEY }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     # Checks that all Terraform configuration files adhere to a canonical format
     #- name: Terraform Format
     #  run: terraform fmt -check
