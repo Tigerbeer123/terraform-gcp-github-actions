@@ -28,15 +28,14 @@ jobs:
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
-    #  run: terraform init
-      with:
-        tf_actions_subcommand: 'init'
-        args: '-backend-config="AWS_ACCESS_KEY_ID=${{ HW_ACCESS_KEY.AWS_ACCESS_KEY_ID }}" -backend-config="AWS_SECRET_ACCESS_KEY=${{ HW_ACCESS_KEY.AWS_SECRET_ACCESS_KEY }}"'
+      run: terraform init
       env:
         HW_ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
         HW_SECRET_KEY: ${{ secrets.SECRET_KEY }}
         HW_REGION_NAME: cn-north-4
         HW_ENTERPRISE_PROJECT_ID: "0"
+        AWS_ACCESS_KEY_ID: ${{ HW_ACCESS_KEY.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ HW_ACCESS_KEY.AWS_SECRET_ACCESS_KEY }}
     # Checks that all Terraform configuration files adhere to a canonical format
     #- name: Terraform Format
     #  run: terraform fmt -check
