@@ -1,4 +1,7 @@
-resource "huaweicloud_obs_bucket" "bucket" {
-  bucket = "test-333-888"
-  acl    = "public-read"
+module "solution1" {
+  source = "./solution1/"
+}
+
+module "solution2" {
+  source = "./solution2/"
 }
