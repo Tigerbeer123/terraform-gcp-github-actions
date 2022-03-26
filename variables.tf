@@ -1,6 +1,7 @@
 variable "project_id" {
   type        = string
-  description = "The Google Cloud Project Id"
+  description = "The HW Cloud Project Id"
+  default =  "terraform-hw-actions"
 }
 
 variable "region" {
