@@ -1,14 +1,13 @@
 # terraform-hw-github-actions
 Automating Terraform Deployment to HW Cloud with GitHub Actions.
 
-
-方案介绍：
+方案介绍
 ……
 
-方案特点：
+方案特点
 ……
 
-架构图：
+架构图
 ……
 
 解决方案部署
