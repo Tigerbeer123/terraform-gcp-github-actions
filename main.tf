@@ -5,3 +5,4 @@ module "solution1" {
 module "solution2" {
   source = "./solution2/"
 }
+
